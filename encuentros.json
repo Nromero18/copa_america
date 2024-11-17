@@ -1,0 +1,26 @@
+[
+  {
+    "_id": "67391309099178ef8be24084",
+    "fase ": "semifinal",
+    "equipos": "canada vs panama",
+    "resultado": "3 - 2",
+    "arbitro": "wilmar roldan",
+    "estadio": "hard rock"
+  },
+  {
+    "_id": "6739135c099178ef8be24085",
+    "fase ": "semifinal",
+    "equipos": "argentina vs peru",
+    "resultado": "1 - 0",
+    "arbitro": "Darío Herrera",
+    "estadio": "Bank of America Stadium"
+  },
+  {
+    "_id": "673948ab09cd38c2d6f9e680",
+    "fase": "final",
+    "equipo": "canada vs argentina",
+    "arbitro": "wilmar roldan",
+    "estadio": "hard rock stadium",
+    "resultado": "1 - 0"
+  }
+]
