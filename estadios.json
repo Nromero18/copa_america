@@ -1,0 +1,20 @@
+[
+  {
+    "_id": "67390f28099178ef8be2406f",
+    "nombre": "hard rock stadium",
+    "capacidad": "65,000",
+    "pais": "estados unidos"
+  },
+  {
+    "_id": "67390fc1099178ef8be24070",
+    "nombre": "mercedez benz",
+    "capacidad": "82,500",
+    "pais": "estados unidos"
+  },
+  {
+    "_id": "67390fe4099178ef8be24071",
+    "nombre": "bank of america stadium",
+    "capacidad": "75,525",
+    "pais": "estados unidos"
+  }
+]
