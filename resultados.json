@@ -1,10 +1,16 @@
 [
   {
-    "_id": "67390ff0099178ef8be24075",
+    "_id": "674368ba702dfba99864ad63",
     "encuentro": "ecuador vs peru",
     "fase": "cuartos de final",
-    "estadio": "rose bowl",
     "arbitro": "wilmar roldan",
     "resultado": "1 - 1"
+  },
+  {
+    "_id": "6743693e702dfba99864ad66",
+    "encuentro": "canada vs panama",
+    "fase": "semifinal",
+    "arbitro": "wilmar roldan",
+    "resultado": "3 - 2"
   }
 ]
