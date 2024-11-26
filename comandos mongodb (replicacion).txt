@@ -1,0 +1,31 @@
+// iniciar las bases de datos
+mongosh --host localhost --port 27018
+
+
+rs.initiate({
+  _id: "RS",
+  version: 1,
+  members: [
+    { _id: 0, host: "localhost:27018" },
+    { _id: 1, host: "localhost:27019" },
+  ]
+});
+
+
+// apertura de puertos
+mongod --port 27018 --dbpath C:\data\replica --replSet RS
+mongod --port 27019 --dbpath C:\data\replica1 --replSet RS
+mongod --port 27020 --dbpath C:\data\replica2 --replSet RS
+
+
+// reinicializar y actualizar los nodos
+
+rs.reconfig({
+  _id: "RS",
+  version: 1,
+  members: [
+    { _id: 0, host: "localhost:27018" },
+    { _id: 1, host: "localhost:27019" },
+    { _id: 2, host: "localhost:27020" }
+  ]
+}, { force: true });
