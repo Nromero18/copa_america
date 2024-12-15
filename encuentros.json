@@ -1,26 +1,50 @@
 [
   {
-    "_id": "67436788702dfba99864ad5b",
+    "_id": "6743c38796cfb061cee0a788",
     "fase": "semifinal",
     "equipos": "canada vs panama",
-    "resultado": "3 - 2 ",
-    "estadio": "hard rock",
-    "arbitro": "wilmar roldan"
+    "resultado": "3 - 2",
+    "arbitro": "wilmar roldan",
+    "estadio": "hard rock stadium"
   },
   {
-    "_id": "674367f5702dfba99864ad5c",
+    "_id": "6743c40c96cfb061cee0a789",
     "fase": "semifinal",
     "equipos": "argentina vs peru",
     "resultado": "1 - 0",
-    "estadio": "Bank of America Stadium",
-    "arbitro": "dario herrera"
+    "arbitro": "dario herrera",
+    "estadio": "bank of america stadium"
   },
   {
-    "_id": "67436841702dfba99864ad5d",
+    "_id": "6743c43796cfb061cee0a78a",
     "fase": "final",
-    "equipos": "canada vs argentina",
-    "resultado": "1 - 0",
+    "equipos": "argentina vs canda",
+    "resultado": "2 - 0",
+    "arbitro": "wilmar roldan",
+    "estadio": "hard rock stadium"
+  },
+  {
+    "_id": "675ec581b340f231620d8190",
+    "fecha": "2024-06-15T00:00:00.000Z",
+    "equipo_local": "colombia",
+    "equipo_visitante": "brasil",
     "estadio": "hard rock stadium",
-    "arbitro": "wilmar roldan"
+    "resultado": "2-0"
+  },
+  {
+    "_id": "675ec581b340f231620d8191",
+    "fecha": "2024-07-20T00:00:00.000Z",
+    "equipo_local": "costa rica",
+    "equipo_visitante": "el salvador",
+    "estadio": "mercedez benz",
+    "resultado": "1-0"
+  },
+  {
+    "_id": "675ec581b340f231620d8192",
+    "fecha": "2025-06-18T00:00:00.000Z",
+    "equipo_local": "estados unidos",
+    "equipo_visitante": "guatemala",
+    "estadio": "bank of america stadium",
+    "resultado": "3-2"
   }
 ]

@@ -1,0 +1,42 @@
+// apertura de puertos
+mongod --port 27018 --dbpath C:\data\replica --replSet RS
+mongod --port 27019 --dbpath C:\data\replica1 --replSet RS
+mongod --port 27020 --dbpath C:\data\replica2 --replSet RS
+
+
+// iniciar las bases de datos
+mongosh --host localhost --port 27018
+
+// configuración replica
+mongod --replSet configReplSet --port 27018 --dbpath C:\data\shard1 --bind_ip localhost
+
+mongod --replSet shardReplSet1 --port 27019 --dbpath C:\data\shard2 --bind_ip localhost
+
+mongod --replSet shardReplSet1 --port 27020 --dbpath C:\data\shard3 --bind_ip localhost
+
+
+// comando sharding 
+sh.enableSharding("encuentros")
+
+// estado del sharding
+sh.status()
+db.runCommand({ isMaster: 1 })
+
+// uso base de datos
+use copa
+
+//Insertar Datos en la Colección
+
+db.encuentros.insertMany([
+    { "fecha": ISODate("2024-06-15T00:00:00Z"), "equipo_local": "colombia", "equipo_visitante": "brasil", "estadio": "hard rock stadium", "resultado": "2-0" },
+    { "fecha": ISODate("2024-07-20T00:00:00Z"), "equipo_local": "costa rica", "equipo_visitante": "el salvador", "estadio": "mercedez benz", "resultado": "1-0" },
+    { "fecha": ISODate("2025-06-18T00:00:00Z"), "equipo_local": "estados unidos", "equipo_visitante": "guatemala", "estadio": "bank of america stadium", "resultado": "3-2" }
+])
+
+// Consultar Datos
+db.encuentros.find({ "fecha": { $gte: ISODate("2024-01-01T00:00:00Z"), $lt: ISODate("2025-01-01T00:00:00Z") } })
+
+// estado del particionamiento
+db.runCommand({ isMaster: 1 })
+
+
